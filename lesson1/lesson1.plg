@@ -6,18 +6,18 @@
 --------------------Configuration: lesson1 - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\xiayu\AppData\Local\Temp\RSP8066.tmp" with contents
+Creating temporary file "C:\Users\xiayu\AppData\Local\Temp\RSPD5A2.tmp" with contents
 [
-/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/lesson1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/lesson1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
 "G:\file\GitHub\c_file\lesson1\printNum.c"
 ]
-Creating command line "cl.exe @C:\Users\xiayu\AppData\Local\Temp\RSP8066.tmp" 
-Creating temporary file "C:\Users\xiayu\AppData\Local\Temp\RSP8067.tmp" with contents
+Creating command line "cl.exe @C:\Users\xiayu\AppData\Local\Temp\RSPD5A2.tmp" 
+Creating temporary file "C:\Users\xiayu\AppData\Local\Temp\RSPD5A3.tmp" with contents
 [
-kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/lesson1.pdb" /debug /machine:I386 /out:"Debug/lesson1.exe" /pdbtype:sept 
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/lesson1.pdb" /debug /machine:I386 /out:"Debug/lesson1.exe" /pdbtype:sept 
 .\Debug\printNum.obj
 ]
-Creating command line "link.exe @C:\Users\xiayu\AppData\Local\Temp\RSP8067.tmp"
+Creating command line "link.exe @C:\Users\xiayu\AppData\Local\Temp\RSPD5A3.tmp"
 <h3>Output Window</h3>
 Compiling...
 printNum.c

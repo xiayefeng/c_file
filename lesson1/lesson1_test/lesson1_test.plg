@@ -6,24 +6,14 @@
 --------------------Configuration: lesson1_test - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\xiayu\AppData\Local\Temp\RSP9BDB.tmp" with contents
+Creating temporary file "C:\Users\xiayu\AppData\Local\Temp\RSPB886.tmp" with contents
 [
-/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/lesson1_test.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
-"G:\file\GitHub\c_file\lesson1\lesson1_test\abc.c"
-"G:\file\GitHub\c_file\lesson1\lesson1_test\Sum_Pro.c"
-]
-Creating command line "cl.exe @C:\Users\xiayu\AppData\Local\Temp\RSP9BDB.tmp" 
-Creating temporary file "C:\Users\xiayu\AppData\Local\Temp\RSP9BEB.tmp" with contents
-[
-kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/lesson1_test.pdb" /debug /machine:I386 /out:"Debug/lesson1_test.exe" /pdbtype:sept 
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/lesson1_test.pdb" /debug /machine:I386 /out:"Debug/lesson1_test.exe" /pdbtype:sept 
 .\Debug\abc.obj
 .\Debug\Sum_Pro.obj
 ]
-Creating command line "link.exe @C:\Users\xiayu\AppData\Local\Temp\RSP9BEB.tmp"
+Creating command line "link.exe @C:\Users\xiayu\AppData\Local\Temp\RSPB886.tmp"
 <h3>Output Window</h3>
-Compiling...
-abc.c
-Sum_Pro.c
 Linking...
 
 

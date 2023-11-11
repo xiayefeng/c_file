@@ -14,7 +14,7 @@ void main()
   printf("cube(3)=%d\n", cube(3));
   printf("cube(5)=%d\n", cube(5));
   printf("cube(8)=%d\n", cube(8));
-  printf(sizeof(int));
+  printf("sizeof int %d\n", sizeof(int));
 
   a=2;b=3;c=4;
   averageValue = AVE(a,b,c);
