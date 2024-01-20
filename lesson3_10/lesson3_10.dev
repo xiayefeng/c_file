@@ -1,6 +1,6 @@
 [Project]
-FileName=lesson3_9.dev
-Name=lesson3_9
+FileName=lesson3_10.dev
+Name=lesson3_10
 Type=1
 Ver=2
 ObjFiles=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=2
+UnitCount=3
 
 [VersionInfo]
 Major=1
@@ -50,6 +50,16 @@ ProductVersion=
 AutoIncBuildNr=0
 SyncProduct=1
 
+[Unit2]
+FileName=a.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
 [Unit1]
 FileName=main.c
 CompileCpp=0
@@ -60,8 +70,8 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit2]
-FileName=a.c
+[Unit3]
+FileName=b.c
 CompileCpp=0
 Folder=
 Compile=1
