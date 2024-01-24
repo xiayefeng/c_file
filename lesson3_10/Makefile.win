@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o a.o b.o
-LINKOBJ  = main.o a.o b.o
+OBJ      = main.o a.o b.o c.o d.o e.o f.o g.o h.o i.o j.o k.o
+LINKOBJ  = main.o a.o b.o c.o d.o e.o f.o g.o h.o i.o j.o k.o
 LIBS     = -L"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
 CXXINCS  = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
@@ -32,3 +32,30 @@ a.o: a.c
 
 b.o: b.c
 	$(CC) -c b.c -o b.o $(CFLAGS)
+
+c.o: c.c
+	$(CC) -c c.c -o c.o $(CFLAGS)
+
+d.o: d.c
+	$(CC) -c d.c -o d.o $(CFLAGS)
+
+e.o: e.c
+	$(CC) -c e.c -o e.o $(CFLAGS)
+
+f.o: f.c
+	$(CC) -c f.c -o f.o $(CFLAGS)
+
+g.o: g.c
+	$(CC) -c g.c -o g.o $(CFLAGS)
+
+h.o: h.c
+	$(CC) -c h.c -o h.o $(CFLAGS)
+
+i.o: i.c
+	$(CC) -c i.c -o i.o $(CFLAGS)
+
+j.o: j.c
+	$(CC) -c j.c -o j.o $(CFLAGS)
+
+k.o: k.c
+	$(CC) -c k.c -o k.o $(CFLAGS)

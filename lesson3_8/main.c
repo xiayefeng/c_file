@@ -3,6 +3,8 @@
 void getBigDevice();
 void getSingalNum();
 void getMaxN(int n);
+void getMaxN2(int n);
+
 int getNeedYear(double);
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
@@ -11,6 +13,7 @@ int main(int argc, char *argv[]) {
 	getBigDevice();
 	getSingalNum();
 	getMaxN(5);
+	getMaxN2(5);
 	getNeedYear(4.0);
 	printf(" 依次输入若干个整数，输入负数时结束:\n");
 	scanf("%d", &x);
