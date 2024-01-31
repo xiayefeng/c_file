@@ -2,6 +2,8 @@
 #include <stdlib.h>
 
 double f1(int n);
+double fn3(int n);
+int fn4();
 void getNumAssic();
 int minDouble(int, int);
 int maxDevide(int, int);
@@ -10,6 +12,8 @@ void calcNum();
 
 int main(int argc, char *argv[]) {
 	int a,b,c;
+	printf("3的n立方之和为: %Lf\n", fn3(10));
+	printf                                                                                                    ("小于1000的偶数平方和最大数是: %d\n", fn4());
 	getNumAssic();
 	printf("输入两个正整数：");
 	do scanf("%d %d", &b, &c); while(b<=0 || c<=0);

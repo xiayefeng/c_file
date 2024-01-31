@@ -1,3 +1,24 @@
+#include <math.h>
+
+double fn3(int n){
+	double s=0.0;
+	int i;
+	for(i=0;i<=n;i++){
+		s+= pow(3, n);
+	}
+	return s;
+}
+
+int fn4(){
+	double s=0.0;
+	int i = 0;
+	do{
+		i+=2;
+		s+= i*i;
+	}while(s<1000);
+	i-=2;
+	return i;
+}
 
 double f1(int n){
 	int i;
