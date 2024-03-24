@@ -1,0 +1,46 @@
+# Project: ÏîÄ¿1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o a.o findMin.o getRowSum.o getTax.o getSquerSum.o getScore.o
+LINKOBJ  = main.o a.o findMin.o getRowSum.o getTax.o getSquerSum.o getScore.o
+LIBS     = -L"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
+CXXINCS  = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
+BIN      = lesson4_01.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+a.o: a.c
+	$(CC) -c a.c -o a.o $(CFLAGS)
+
+findMin.o: findMin.c
+	$(CC) -c findMin.c -o findMin.o $(CFLAGS)
+
+getRowSum.o: getRowSum.c
+	$(CC) -c getRowSum.c -o getRowSum.o $(CFLAGS)
+
+getTax.o: getTax.c
+	$(CC) -c getTax.c -o getTax.o $(CFLAGS)
+
+getSquerSum.o: getSquerSum.c
+	$(CC) -c getSquerSum.c -o getSquerSum.o $(CFLAGS)
+
+getScore.o: getScore.c
+	$(CC) -c getScore.c -o getScore.o $(CFLAGS)
