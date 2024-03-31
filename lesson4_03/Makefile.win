@@ -1,15 +1,15 @@
-# Project: lesson4_02
+# Project: lesson4_03
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o selectSort.o insertSort.o searchIndex.o binarySearch.o
-LINKOBJ  = main.o selectSort.o insertSort.o searchIndex.o binarySearch.o
+OBJ      = main.o searchStrNum.o
+LINKOBJ  = main.o searchStrNum.o
 LIBS     = -L"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
 CXXINCS  = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
-BIN      = lesson4_02.exe
+BIN      = lesson4_03.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -27,14 +27,5 @@ $(BIN): $(OBJ)
 main.o: main.c
 	$(CC) -c main.c -o main.o $(CFLAGS)
 
-selectSort.o: selectSort.c
-	$(CC) -c selectSort.c -o selectSort.o $(CFLAGS)
-
-insertSort.o: insertSort.c
-	$(CC) -c insertSort.c -o insertSort.o $(CFLAGS)
-
-searchIndex.o: searchIndex.c
-	$(CC) -c searchIndex.c -o searchIndex.o $(CFLAGS)
-
-binarySearch.o: binarySearch.c
-	$(CC) -c binarySearch.c -o binarySearch.o $(CFLAGS)
+searchStrNum.o: searchStrNum.c
+	$(CC) -c searchStrNum.c -o searchStrNum.o $(CFLAGS)
