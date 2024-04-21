@@ -1,6 +1,6 @@
 [Project]
-FileName=lesson4_03.dev
-Name=lesson4_03
+FileName=lesson4_04.dev
+Name=lesson4_04
 Type=1
 Ver=2
 ObjFiles=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=3
+UnitCount=6
 
 [VersionInfo]
 Major=1
@@ -61,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=searchStrNum.c
+FileName=testFn.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -71,7 +71,37 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=selectSort.c
+FileName=testFn2.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit4]
+FileName=testFn3.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit5]
+FileName=testFn4.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit6]
+FileName=testFn5.c
 CompileCpp=0
 Folder=
 Compile=1

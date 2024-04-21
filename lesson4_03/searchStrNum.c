@@ -8,7 +8,7 @@ void searchStr() {
     printf("输入10个字符串:\n");
     for(i=0; i<10; i++) {
     	printf("%d\n", i);
-        scanf("%s", a[i]);s
+        scanf("%s", a[i]);
     }
     printf("输入一个待查字符串:");
     scanf("%s", s);

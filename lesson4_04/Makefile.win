@@ -1,0 +1,43 @@
+# Project: lesson4_04
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o testFn.o testFn2.o testFn3.o testFn4.o testFn5.o
+LINKOBJ  = main.o testFn.o testFn2.o testFn3.o testFn4.o testFn5.o
+LIBS     = -static-libgcc
+INCS     = 
+CXXINCS  = 
+BIN      = lesson4_04.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+testFn.o: testFn.c
+	$(CC) -c testFn.c -o testFn.o $(CFLAGS)
+
+testFn2.o: testFn2.c
+	$(CC) -c testFn2.c -o testFn2.o $(CFLAGS)
+
+testFn3.o: testFn3.c
+	$(CC) -c testFn3.c -o testFn3.o $(CFLAGS)
+
+testFn4.o: testFn4.c
+	$(CC) -c testFn4.c -o testFn4.o $(CFLAGS)
+
+testFn5.o: testFn5.c
+	$(CC) -c testFn5.c -o testFn5.o $(CFLAGS)
