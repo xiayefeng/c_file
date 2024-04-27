@@ -1,0 +1,40 @@
+# Project: lesson4_05
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o first.o second.o third.o forth.o
+LINKOBJ  = main.o first.o second.o third.o forth.o
+LIBS     = -static-libgcc
+INCS     = 
+CXXINCS  = 
+BIN      = lesson4_05.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+first.o: first.c
+	$(CC) -c first.c -o first.o $(CFLAGS)
+
+second.o: second.c
+	$(CC) -c second.c -o second.o $(CFLAGS)
+
+third.o: third.c
+	$(CC) -c third.c -o third.o $(CFLAGS)
+
+forth.o: forth.c
+	$(CC) -c forth.c -o forth.o $(CFLAGS)

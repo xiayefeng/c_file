@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o testFn.o testFn2.o testFn3.o testFn4.o testFn5.o
-LINKOBJ  = main.o testFn.o testFn2.o testFn3.o testFn4.o testFn5.o
+OBJ      = main.o testFn.o testFn2.o testFn3.o testFn4.o testFn5.o testFn6.o testFn7.o testFn8.o testFn9.o
+LINKOBJ  = main.o testFn.o testFn2.o testFn3.o testFn4.o testFn5.o testFn6.o testFn7.o testFn8.o testFn9.o
 LIBS     = -static-libgcc
 INCS     = 
 CXXINCS  = 
@@ -41,3 +41,15 @@ testFn4.o: testFn4.c
 
 testFn5.o: testFn5.c
 	$(CC) -c testFn5.c -o testFn5.o $(CFLAGS)
+
+testFn6.o: testFn6.c
+	$(CC) -c testFn6.c -o testFn6.o $(CFLAGS)
+
+testFn7.o: testFn7.c
+	$(CC) -c testFn7.c -o testFn7.o $(CFLAGS)
+
+testFn8.o: testFn8.c
+	$(CC) -c testFn8.c -o testFn8.o $(CFLAGS)
+
+testFn9.o: testFn9.c
+	$(CC) -c testFn9.c -o testFn9.o $(CFLAGS)
