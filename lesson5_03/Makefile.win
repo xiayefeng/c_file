@@ -1,4 +1,4 @@
-# Project: lesson5_01
+# Project: lesson5_03
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
@@ -9,7 +9,7 @@ LINKOBJ  = main.o test1.o test2.o test3.o test4.o test5.o
 LIBS     = -static-libgcc
 INCS     = 
 CXXINCS  = 
-BIN      = lesson5_01.exe
+BIN      = lesson5_03.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f

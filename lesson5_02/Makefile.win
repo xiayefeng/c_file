@@ -1,15 +1,15 @@
-# Project: lesson5_01
+# Project: lesson5_02
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o test1.o test2.o test3.o test4.o test5.o
-LINKOBJ  = main.o test1.o test2.o test3.o test4.o test5.o
+OBJ      = main.o test1.o
+LINKOBJ  = main.o test1.o
 LIBS     = -static-libgcc
 INCS     = 
 CXXINCS  = 
-BIN      = lesson5_01.exe
+BIN      = lesson5_02.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -29,15 +29,3 @@ main.o: main.c
 
 test1.o: test1.c
 	$(CC) -c test1.c -o test1.o $(CFLAGS)
-
-test2.o: test2.c
-	$(CC) -c test2.c -o test2.o $(CFLAGS)
-
-test3.o: test3.c
-	$(CC) -c test3.c -o test3.o $(CFLAGS)
-
-test4.o: test4.c
-	$(CC) -c test4.c -o test4.o $(CFLAGS)
-
-test5.o: test5.c
-	$(CC) -c test5.c -o test5.o $(CFLAGS)
