@@ -1,0 +1,37 @@
+# Project: lesson6_06
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o testFn.o testFn2.o expect.o
+LINKOBJ  = main.o testFn.o testFn2.o expect.o
+LIBS     = -static-libgcc
+INCS     = 
+CXXINCS  = 
+BIN      = lesson6_06.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+testFn.o: testFn.c
+	$(CC) -c testFn.c -o testFn.o $(CFLAGS)
+
+testFn2.o: testFn2.c
+	$(CC) -c testFn2.c -o testFn2.o $(CFLAGS)
+
+expect.o: expect.c
+	$(CC) -c expect.c -o expect.o $(CFLAGS)
