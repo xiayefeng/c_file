@@ -1,0 +1,37 @@
+# Project: lesson7_01
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o structFn.o sortSturct.o calcStruct.o
+LINKOBJ  = main.o structFn.o sortSturct.o calcStruct.o
+LIBS     = -static-libgcc
+INCS     = 
+CXXINCS  = 
+BIN      = lesson7_01.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+structFn.o: structFn.c
+	$(CC) -c structFn.c -o structFn.o $(CFLAGS)
+
+sortSturct.o: sortSturct.c
+	$(CC) -c sortSturct.c -o sortSturct.o $(CFLAGS)
+
+calcStruct.o: calcStruct.c
+	$(CC) -c calcStruct.c -o calcStruct.o $(CFLAGS)
