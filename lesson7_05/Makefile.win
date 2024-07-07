@@ -6,7 +6,7 @@ CC       = gcc.exe
 WINDRES  = windres.exe
 OBJ      = main.o testFn.o
 LINKOBJ  = main.o testFn.o
-LIBS     = -static-libgcc
+LIBS     = -static-libgcc -fexec-charset=UTF-8
 INCS     = 
 CXXINCS  = 
 BIN      = lesson7_05.exe
