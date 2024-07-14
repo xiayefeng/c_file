@@ -1,0 +1,31 @@
+# Project: lesson8_04
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o fPutFn.o
+LINKOBJ  = main.o fPutFn.o
+LIBS     = -static-libgcc
+INCS     = 
+CXXINCS  = 
+BIN      = lesson8_04.exe
+CXXFLAGS = $(CXXINCS) -ansi
+CFLAGS   = $(INCS) -ansi
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+fPutFn.o: fPutFn.c
+	$(CC) -c fPutFn.c -o fPutFn.o $(CFLAGS)

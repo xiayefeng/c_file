@@ -1,6 +1,6 @@
 [Project]
-FileName=lesson8_02.dev
-Name=lesson8_02
+FileName=lesson8_04.dev
+Name=lesson8_04
 Type=1
 Ver=2
 ObjFiles=
@@ -28,8 +28,8 @@ Folders=
 IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
-CompilerSettings=0000000000000000000000000
-UnitCount=3
+CompilerSettings=1000000000000000000000000
+UnitCount=2
 
 [VersionInfo]
 Major=1
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit2]
-FileName=testFn.c
+FileName=fPutFn.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -62,16 +62,6 @@ BuildCmd=
 
 [Unit1]
 FileName=main.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit3]
-FileName=inputDataToFile.c
 CompileCpp=0
 Folder=
 Compile=1
